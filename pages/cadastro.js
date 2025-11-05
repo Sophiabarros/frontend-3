@@ -31,5 +31,4 @@ async function signUpUser() {
 
     window.location.href = "../index.html"
 }
-//hh
 })
