@@ -6,7 +6,7 @@ function init(){
     if (user) {
         navUl.innerHTML += `
         <li><h2>Usuário: ${user.name}</h2></li>
-        <li><button>Sair</button></li>        
+        <li><button id="logout" onclick="logout()">Sair</button></li>        
         `
 
         return
@@ -18,6 +18,12 @@ function init(){
     </li>
     `
 }
+
+function logout() {
+    sessionStorage.removeItem("user")
+    window.location.reload()
+}
+
 
 init()
 
