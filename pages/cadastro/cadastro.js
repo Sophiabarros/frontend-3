@@ -18,7 +18,7 @@ async function signUpUser() {
         password
     }
 
-    const response = await fetch("http://localhost:3333/cadastrar", {
+    const response = await fetch("https://backend-3-i13i.vercel.app/cadastrar", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
